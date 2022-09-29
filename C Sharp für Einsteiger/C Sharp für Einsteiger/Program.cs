@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C_Sharp_für_Einsteiger;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,79 @@ namespace C_Sharp_für_Einsteiger
 {
     class Fahrrad
     {
-        public string name;
-        public int preis;
-        public string kategorie;
-        public int radgröße;
-    }
+        //S. 141 Nr. 1 
+        //public int laufrad { get; set; }
+        //public int rahmenhoehe { get; set; }
+        //public string farbe { get; set; }
+        //public string fahrradtyp { get; set; }
+        //public void FahrradAusgeben()
+        //{
+        //    Console.WriteLine("Laufradgröße " + this.laufrad);
+        //    Console.WriteLine("Rahmenhöhe " + this.rahmenhoehe);
+        //    Console.WriteLine("Farbe " + this.farbe);
+        //    Console.WriteLine("Fahrradtyp " + this.fahrradtyp);
+        //}
 
+        ////S. 141 Nr. 2 
+        //public int laufrad { get; set; }
+        //public int rahmenhoehe { get; set; }
+        //public string farbe { get; set; }
+        //public string fahrradtyp { get; set; }
+        //public void FahrradAusgeben()
+        //{
+        //    Console.WriteLine("Laufradgröße " + this.laufrad);
+        //    Console.WriteLine("Rahmenhöhe " + this.rahmenhoehe);
+        //    Console.WriteLine("Farbe " + this.farbe);
+        //    Console.WriteLine("Fahrradtyp " + this.fahrradtyp);
+        //}
+        //public void Laufrad(int laufrad)
+        //{
+        //    laufrad = laufrad;
+        //}
+        //public void Rahmenhoehe(int rahmenhoehe)
+        //{
+        //    rahmenhoehe = rahmenhoehe;
+        //}
+        //public void Farbe(string farbe)
+        //{
+        //    farbe = farbe;
+        //}
+        //public void Fahrradtyp(string fahrradtyp)
+        //{
+        //    fahrradtyp = fahrradtyp;
+        //}
+
+        ////S. 141 Nr. 3
+        public int laufrad { get; set; }
+        public int rahmenhoehe { get; set; }
+        public string farbe { get; set; }
+        public string fahrradtyp { get; set; }
+        public void FahrradAusgeben()
+        {
+            Console.WriteLine("Laufradgröße " + this.laufrad);
+            Console.WriteLine("Rahmenhöhe " + this.rahmenhoehe);
+            Console.WriteLine("Farbe " + this.farbe);
+            Console.WriteLine("Fahrradtyp " + this.fahrradtyp);
+        }
+        public void Laufrad(int laufrad)
+        {
+            this.laufrad = laufrad;
+        }
+        public void Rahmenhoehe(int rahmenhoehe)
+        {
+            this.rahmenhoehe = rahmenhoehe;
+        }
+        public void Farbe(string farbe)
+        {
+            this.farbe = farbe;
+        }
+        public void Fahrradtyp(string fahrradtyp)
+        {
+            this.fahrradtyp = fahrradtyp;
+        }
+
+
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -80,7 +148,113 @@ namespace C_Sharp_für_Einsteiger
 
 
 
+            //S. 138 Methoden verwenden C#
+            //    class Haus
+            //{
+            //    public int grundflaeche;
+            //    public int fensterzahl;
+            //    public double hoehe;
+            //    public string farbe;
+            //    public string dachtyp
+            //    public void MemberAusgeben()
+            //    {
+            //        Console.WriteLine("Grundfläche " + this.grundflaeche);
+            //        Console.WriteLine("Fensterzahl " + this.fensterzahl);
+            //        Console.WriteLine("Höhe " + this.hoehe);
+            //        Console.WriteLine("Farbe " + this.farbe);
+            //        Console.WriteLine("Dachtyp: " + this.dachtyp);
+            //    }
+            //    public void setGrundflaeche(int flaeche)
+            //    {
+            //        this.grundflaeche = flaeche;
+            //    }
+            //    public void setFensterzahl(int fenster)
+            //    {
+            //        this.fensterzahl = fenster;
+            //    }
+            //    public void setHoehe(double hoehe)
+            //    {
+            //        this.hoehe = hoehe;
+            //    }
+            //    public void setFarbe(string farbe)
+            //    {
+            //        this.farbe = farbe;
+            //    }
+            //    public void setDachtyp(string dachtyp)
+            //    {
+            //        this.dachtyp = dachtyp;
+            //    }
+            //    public double volumenBerechnen()
+            //    {
+            //        double volumen = this.grundflaeche * this.hoehe;
+            //        if (this.dachtyp == "giebeldach")
+            //        {
+            //            volumen *= 0.75;
+            //        }
+            //        return volumen;
+            //    }
+            //}
+            //Haus meinHaus = new Haus();
+            //    meinHaus.setGrundflaeche(100);        
+            //    meinHaus.setFensterzahl(12);       
+            //    meinHaus.setHoehe(5.0);      
+            //    meinHaus.setFarbe("weiß");      
+            //    meinHaus.setDachtyp("Giebeldach");      
+            //    meinHaus.MemberAusgeben();
+            //    double volumenhaus = meinHaus.volumenBerechnen();     
+            //    Console.WriteLine(volumenhaus);    
+            //    Console.ReadKey();
 
+            //S. 141 Nr. 1 
+            //Fahrrad meinFahrrad = new Fahrrad();
+            //Console.WriteLine("Geben Sie die Laufradgröße ein: ");
+            //meinFahrrad.laufrad = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Geben Sie die Rahmenhöhe ein: ");
+            //meinFahrrad.rahmenhoehe = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Geben Sie die Farbe ein: ");
+            //meinFahrrad.farbe = Console.ReadLine();
+            //Console.WriteLine("Geben Sie den Fahrradtyp ein: ");
+            //meinFahrrad.fahrradtyp = Console.ReadLine();
+            //meinFahrrad.FahrradAusgeben();
+            //Console.ReadKey();
+
+            //S. 141 Nr. 2
+            //Fahrrad meinFahrrad = new Fahrrad();
+            //Console.WriteLine("Geben Sie die Laufradgröße ein: ");
+            //meinFahrrad.laufrad = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Geben Sie die Rahmenhöhe ein: ");
+            //meinFahrrad.rahmenhoehe = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Geben Sie die Farbe ein: ");
+            //meinFahrrad.farbe = Console.ReadLine();
+            //Console.WriteLine("Geben Sie den Fahrradtyp ein: ");
+            //meinFahrrad.fahrradtyp = Console.ReadLine();
+            //meinFahrrad.FahrradAusgeben();
+            //Console.ReadKey();
+
+            //S. 141 Nr. 3        
+            List<Fahrrad> meineFahrräder = new List<Fahrrad>();
+            char weiter = 'j';
+            int zaehler = 0;
+            while (weiter == 'j')
+            {
+                meineFahrräder.Add(new Fahrrad());
+                Console.WriteLine("Geben Sie die Laufradgröße ein: ");
+                meineFahrräder[zaehler].Laufrad(int.Parse(Console.ReadLine()));
+                Console.WriteLine("Geben Sie die Rahmenhöhe ein: ");
+                meineFahrräder[zaehler].Rahmenhoehe(int.Parse(Console.ReadLine()));
+                Console.WriteLine("Geben Sie die Farbe ein: ");
+                meineFahrräder[zaehler].Farbe(Console.ReadLine());
+                Console.WriteLine("Geben Sie den Fahrradtyp ein: ");
+                meineFahrräder[zaehler].Fahrradtyp(Console.ReadLine());
+                zaehler++;
+                Console.WriteLine("Möchtest du ein weiteres Fahrrad hinzufügen j/n ");
+                weiter = char.Parse(Console.ReadLine()); 
+            }
+            foreach (Fahrrad f in meineFahrräder)
+            {
+                f.FahrradAusgeben();
+            }
+            Console.ReadKey();
         }
     }
 }
