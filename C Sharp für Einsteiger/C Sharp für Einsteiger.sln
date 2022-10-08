@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C Sharp für Einsteiger", "C Sharp für Einsteiger\C Sharp für Einsteiger.csproj", "{83ACEF21-9EAF-405B-BECC-F5549111FD5F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fahrgemeinschaftsapp", "..\..\015 Fahrgemeinschaftsapp\Fahrgemeinschaftsapp\Fahrgemeinschaftsapp\Fahrgemeinschaftsapp.csproj", "{F311163B-E831-4D06-B50D-227170B40A19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{83ACEF21-9EAF-405B-BECC-F5549111FD5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83ACEF21-9EAF-405B-BECC-F5549111FD5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83ACEF21-9EAF-405B-BECC-F5549111FD5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83ACEF21-9EAF-405B-BECC-F5549111FD5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F311163B-E831-4D06-B50D-227170B40A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F311163B-E831-4D06-B50D-227170B40A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F311163B-E831-4D06-B50D-227170B40A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F311163B-E831-4D06-B50D-227170B40A19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
