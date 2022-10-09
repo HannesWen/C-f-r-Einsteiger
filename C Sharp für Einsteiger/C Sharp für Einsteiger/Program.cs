@@ -12,17 +12,38 @@ namespace C_Sharp_für_Einsteiger
     {
         static void Main(string[] args)
         {
-            Auto meinAuto = new Auto(320, 23, 220);
-            Geländewagen meingeländewagen = new Geländewagen(400, 42, 85, true);
+            //S:180 Nr. 1
+            //Console.Write("Geben Sie bitte den Radikant ein: ");
+            //double radikant = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Ergebnis: " + Math.Sqrt(radikant));
 
-            Console.WriteLine("Aktuelle GEschwindigkeit des Autos: " + meinAuto.getGeschwindigkeit());
-            meinAuto.setGeschwindigkeit(200);
-            Console.WriteLine("Neue Geschwindigkeit des Autos: " + meinAuto.getGeschwindigkeit());
+            //Console.ReadKey();
 
-            Console.WriteLine("Aktuelle Geschwindigkeit des Geländewagens: " + meingeländewagen.getGeschwindigkeit());
-            Console.WriteLine("Allradantrieb vorhanden: " + meingeländewagen.getAllradantrieb());
+            List<int> meineListe = new List<int>();
+            meineListe.Add(5);
+            meineListe.Add(12);
+            meineListe.Add(92);
+            meineListe.Add(7);
 
+            Console.WriteLine("Welchen Wert möchten SIe hinzufügen? ");
+            int wert = int.Parse(Console.ReadLine());
+            Console.WriteLine("An welcher Position möchten Sie Ihn einfügen? ");
+            int position = int.Parse(Console.ReadLine());
+            if (position - 1 <= meineListe.Count & position > 0)
+            {
+                meineListe.Insert(position - 1, wert);
+            }
+            else
+            {
+                Console.WriteLine("Die angegebene Position ist nicht verfügbar.");
+            }
+
+            foreach (int inhalt in meineListe)
+            {
+                Console.WriteLine(inhalt);
+            }
             Console.ReadKey();
         }
+        
     }
 }
